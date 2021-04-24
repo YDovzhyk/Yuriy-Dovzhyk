@@ -1,0 +1,15 @@
+body {
+    font-family: serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: #000;
+    leftmargin:"0";
+}
+IMG.fig { /* Отобраекание картинки Python серой*/
+    float: right;
+    padding-right: 0px; /* Отступ */
+    filter: grayscale(100%);
+}
+IMG { /* Отобраекание всех картинок серыми*/
+    filter: grayscale(100%);
+}
