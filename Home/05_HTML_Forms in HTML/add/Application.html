@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application</title>
+</head>
+<body leftmargin=120" rightmargin="120">
+<h1 align="center">Заполните анкету</h1>
+<form id="application" name="user_data" method="post" action="http://sc.it-academy.by/fe/form.php"
+      target="_blank">
+
+    <fieldset>
+        <legend>Личные данные</legend>
+        <input type="text" name="Фамилия" maxlength="25" pattern="[а-яА-Я]+$" required autofocus placeholder="Фамилия">
+        <br>
+        <input type="text" name="Имя" maxlength="20" pattern="[а-яА-Я]+$" required placeholder="Имя">
+        <br>
+        <input type="text" name="Отчество" maxlength="24" pattern="[а-яА-Я]+$" required placeholder="Отчество">
+
+        <fieldset>
+            <legend>Паспортные данные</legend>
+            <input type="text" name="Series" size="2" minlength="2" maxlength="2" pattern="[A-Z]{2}$" required>
+            <input type="text" name="Number" maxlength="7" minlength="7" size="7" pattern="\d{7}" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Дата рождения</legend>
+            <input type="text" name="Year" maxlength="4" minlength="4" size="4" pattern="\d{4}" required>Год рождения
+            <br>
+            Месяц рождения
+            <select name="Month" required>Месяц рождения
+                <option>Январь</option>
+                <option>Февраль</option>
+                <option>Март</option>
+                <option>Апрель</option>
+                <option>Май</option>
+                <option>Июнь</option>
+                <option>Июль</option>
+                <option>Август</option>
+                <option>Сентябрь</option>
+                <option>Октябрь</option>
+                <option>Ноябрь</option>
+                <option>Декабрь</option>
+            </select>
+            <br>
+            <input type="number" name="Day" size="2" value="1" min="1" max="31" step="1" required>День рождения
+        </fieldset>
+
+        <p>Национальность</p>
+        <select name="Nationality" required>(Национальность - выбор одного значения из списка, обязательное поле)
+            <option>Республика Беларусь</option>
+            <option>Россия</option>
+            <option>Украина</option>
+        </select>
+        <p>Адрес:</p>
+        <textarea rows="3" cols="35" name="text" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Интересы</legend>
+        <fieldset>
+            <legend>Хобби</legend>
+            <input type="checkbox" name="Fishing" value="a1">Рыбалка
+            <br>
+            <input type="checkbox" name="Astronomy" value="a2">Астрономия
+            <br>
+            <input type="checkbox" name="Diving" value="a3">Дайвинг
+            <br>
+            <input type="checkbox" name="Stamps" value="a4">Марки
+        </fieldset>
+
+        <fieldset>
+            <legend>Домашние животные(возможность выбора нескольких вариантов)</legend>
+            <select multiple size="12">
+                <optgroup label="Попугаи">
+                    <option value="s1">Волнистый</option>
+                    <option value="s2">Араг</option>
+                    <option value="s3">Неразлучник</option>
+                </optgroup>
+                <optgroup label="Рыба">
+                    <option value="s4">Караси</option>
+                    <option value="s5">Окуни</option>
+                    <option value="s6">Осетр</option>
+                </optgroup>
+                <optgroup label="Птицы">
+                    <option value="s7">Стая ворон</option>
+                    <option value="s8">Аист</option>
+                    <option value="s9">Аптеортхерикс</option>
+                </optgroup>
+            </select>
+        </fieldset>
+    </fieldset>
+
+    <fieldset>
+        <legend>Данные для входа и восстановления пароля</legend>
+        <input type="text" name="login" value="Логин" size="20" pattern="^[a-zA-Z]{4,20}$" required>text: Только
+        латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле
+        <br><br>
+        <input type="password" name="password" value="Пароль" size="20" minlength="10" pattern="[a-zA-Z]{10}$"
+               autocomplete="off" required>password: Только латинница, без пробелов, не менее 10 символов, длина поля
+        20, обязательное поле, отключить
+    </fieldset>
+
+    <fieldset>
+        <legend>Координаты</legend>
+        <input type="email" name="email" placeholder="Введите адрес почты" id="email"
+               pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>email: проверка
+        должна осуществляться при помощи новых атрибутов &lt;Input&gt;
+        <br><br>
+        <input type="url" placeholder="Введите адрес сайта" name="site" required>url: проверка должна осуществляться при
+        помощи новых атрибутов &lt;Input&gt;
+    </fieldset>
+
+    <fieldset>
+        <legend>Цифры</legend>
+        <input type="number" min="-2.5" max="2.5" step="0.1" value="0">number: диапазон от -2.5 до 2.5 с шагом 0.1
+        <br>
+        <input type="range" min="1" max="10" value="5">range: Минимальное 1, максимальное 10
+    </fieldset>
+
+    <fieldset>
+        <legend>Кнопки управления</legend>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Сбросить">
+        <br>
+        <input type="image"
+               src="data:image/jpg;base64,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">
+    </fieldset>
+</form>
+</body>
+</html>
