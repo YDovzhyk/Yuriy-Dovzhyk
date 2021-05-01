@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05_CSS_Background</title>
+    <style>
+        strong {
+            width: 141px;
+            height: 200px;
+            background-image: url("media/cards.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            position: relative;
+        }
+        h2 {margin-left: 0px;}
+        .three {background-position-x: -145px; background-position-y: -199px;}
+        .five{background-position-x: -433px; background-position-y: -597px;}
+        .nine {background-position-x: -287px; background-position-y: -1393px;}
+        .shiftThree {top: 50px; left: 55px; z-index: 5; background-position-x: -145px; background-position-y: -199px;}
+        .shiftFive {left: -120px; top: 25px; z-index: 2; background-position-x: -433px; background-position-y: -597px;}
+        .shiftNine {left: -295px; z-index: 1; background-position-x: -284px; background-position-y: -1393px;}
+    </style>
+</head>
+<body>
+<h2>Карты</h2>
+<strong class="three"></strong>
+<strong class="five" style="margin-left: -7px"></strong>
+<strong class="nine" style="margin-left: -8px"></strong>
+<br>
+<br>
+<strong class="shiftThree"></strong>
+<strong class="shiftFive"></strong>
+<strong class="shiftNine"></strong>
+</body>
+</html>

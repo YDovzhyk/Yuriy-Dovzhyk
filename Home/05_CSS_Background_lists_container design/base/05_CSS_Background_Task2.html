@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List and container with code</title>
+    <style>
+        .content1 {
+            background-color: black;
+            color: green;
+            max-height: 57px;
+            overflow: auto;
+            width: 400px
+        }
+        .content2 {
+            background-color: black;
+            color: green;
+            max-height: 57px;
+            overflow: auto;
+            width: 350px;}
+        p {
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+        ul {
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+        ol {
+            padding-inline-start: 2px;
+        }
+        div {
+            background-color: black;
+            color: green;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+<ul class="content1">
+    <ol type="I" start="1">
+        <li><b>Контейнер с кодом</b></li>
+    </ol>
+    <ul>
+        <ol type="i" start="1">
+            <li>Цвет фона черный</li>
+            <li>Цвет теста зеленый</li>
+            <li>Ширина: 400px</li>
+            <li>Максимальная высота контейнера 4 строки</li>
+            <li>Переполнение автоматическое</li>
+        </ol>
+    </ul>
+</ul>
+<ul class="content2">
+    <ol type="I" start="2">
+        <Li><b>Список</b></Li>
+    </ol>
+    <ul>
+        <ol type="i" start="1">
+            <li>Ширина: 350px</li>
+            <li>Тип списка: римские цифры</li>
+            <li>Тип вложенного спсика: римские нижний регистр цифры</li>
+        </ol>
+    </ul>
+</ul>
+<div>
+    #!/usr/bin/env python
+    print 'Hello. I am a python program.'
+    name= raw_input("What is your name?")
+    print "Hello there, " + name + "!"
+</div>
+</body>
+</html>

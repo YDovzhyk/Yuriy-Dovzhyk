@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05_CSS_Background</title>
+    <style>
+        strong {
+            width: 141px;
+            height: 200px;
+            background-image: url("media/cards.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            position: relative;
+        }
+        h2 {margin-left: 0px}
+        .three {top: 50px; left: 55px; z-index: 5; background-position-x: -140px; background-position-y: -189px;}
+        .five{left: -120px; top: 25px; z-index: 2; background-position-x: -428px; background-position-y: -587px }
+        .nine {left: -295px; z-index: 1; background-position-x: -284px; background-position-y: -1387px}
+
+    </style>
+</head>
+<body>
+<h2>Карты</h2>
+<strong style="background-position-x: -140px; background-position-y: -189px"></strong>
+<strong style="background-position-x: -428px; background-position-y: -587px"></strong>
+<strong style="background-position-x: -284px; background-position-y: -1387px"></strong>
+<br>
+<strong class="three"></strong>
+<strong class="five"></strong>
+<strong class="nine"></strong>
+
+</body>
+</html>
