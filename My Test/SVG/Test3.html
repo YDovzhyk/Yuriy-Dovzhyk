@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Title</title>
+    <style>
+        .flex-container-row {
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-container-column {
+            flex-direction: column;
+            justify-content: end;
+            position: relative;
+            top: 3px;
+            left: -6px;
+        }
+        .top_menu {
+            width: 110px;
+            height: 15px;
+            text-align: center;
+            background: lightgoldenrodyellow;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        #top_menu > div > a {
+            text-decoration: none;
+        }
+        #top_menu > div:hover{
+            background-color: wheat;
+            transition: background-color 0.25s, color 0.15s;
+        }
+        #top_menu > div > a:hover {
+            color: inherit;
+        }
+        #top_menu > div:hover > div a {
+            opacity: 1;
+        }
+        #top_menu > div:hover > div div {
+            height: 100px;
+            opacity: 1;
+        }
+        .inner_menu{
+            width: 110px;
+            height: 15px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+            white-space: nowrap;
+            background-color: #aaf0d1;
+        }
+        .inner_menu > div {
+            height: 0;
+            opacity: 1;
+            transition: height 0.3s, opacity 0.4s;
+        }
+        .inner_menu > div > a {
+            width: 100%;
+            color: inherit;
+            text-decoration: none;
+            height: inherit;
+            overflow: hidden;
+            opacity: 0;
+            transition: height 0.4s, opacity 0.5s;
+        }
+        .inner_menu > div > a:hover{
+            color: white;
+            background-color: #a7fc00;
+
+        }
+    </style>
+</head>
+<body>
+<div id="top_menu" class="flex-container-row">
+    <div class="top_menu"><a href="#">Понедельник</a></div>
+    <div class="top_menu"><a href="#">Вторник</a></div>
+    <div class="top_menu"><a href="#">Среда</a>
+        <div class="flex-container-column" class="inner_menu">
+            <div class="inner_menu"><a href="#">Завтрак</a></div>
+            <div class="inner_menu"><a href="#">Обед</a></div>
+            <div class="inner_menu"><a href="#">Ужин</a></div>
+        </div>
+    </div>
+    <div class="top_menu"><a href="#">Четверг</a></div>
+    <div class="top_menu"><a href="#">Пятница</a></div>
+    <div class="top_menu"><a href="#">Суббота</a></div>
+    <div class="top_menu"><a href="#">Воскресенье</a></div>
+</div>
+</body>
+</html>

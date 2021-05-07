@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Title</title>
+    <style>
+        .top_menu {
+            width: 110px;
+            height: 15px;
+            text-align: center;
+            background: lightgoldenrodyellow;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .flex-container-row {
+            display: flex;
+            flex-direction: row;
+
+        }
+        .flex-container-column {
+            flex-direction: column;
+            justify-content: end;
+            position: relative;
+            top: 3px; left: -6px;
+        }
+        .inner_menu {
+            width: 110px;
+            height: 15px;
+            text-align: center;
+            background: wheat;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        #color{
+            background: wheat;
+        }
+        @media all and (max-width: 245px) {
+            .flex-container-row {
+                display: flex;
+                flex-direction: column;
+            }
+            .flex-container-column {
+                display: none;
+            }
+            #color{
+                background: lightgoldenrodyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container-row">
+    <div class="top_menu">Понедельник</div>
+    <div class="top_menu">Вторник</div>
+    <div class="top_menu" id="color">Среда
+        <div class="flex-container-column">
+        <div class="inner_menu">Завтрак</div>
+        <div class="inner_menu">Обед</div>
+        <div class="inner_menu">Ужин</div>
+        </div>
+</div>
+    <div class="top_menu">Четверг</div>
+    <div class="top_menu">Пятница</div>
+    <div class="top_menu">Суббота</div>
+    <div class="top_menu">Воскресенье</div>
+</div>
+</body>
+</html>

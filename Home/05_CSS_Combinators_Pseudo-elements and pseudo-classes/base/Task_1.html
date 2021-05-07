@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <META charset="utf-8">
+    <TITLE>Task_1</TITLE>
+    <style type="text/css">
+        body {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        p > a[href*="wikipedia"] {
+            background: url("media/extref.png") no-repeat 0 5px;
+            padding-left: 13px;
+        }
+        p > a[href*="document.doc"]{
+            background: url("media/logo-doc.jpg") no-repeat;
+            padding-right: 20px;
+            background-position-x: 100%
+        }
+        p > a[href*="document.pdf"]{
+            background: url("media/logo-pdf.png") no-repeat;
+            padding-right: 20px;
+            background-position-x: 100%
+        }
+        p > a[href*="document.zip"]{
+            background: url("media/logo-zip.gif") no-repeat;
+            padding-right: 20px;
+            background-position-x: 100%
+        }
+        li > a {
+            background: url("media/logo-list.jpg") no-repeat;
+            padding-left: 20px;
+        }
+        li > a[href*="document.doc"]:hover{
+            padding-left: 20px;
+            padding-right: 20px;
+            background-image: url("media/logo-doc.jpg"), url("media/logo-list.jpg");
+            background-repeat: no-repeat, no-repeat;
+            background-position: right, left;
+        }
+        li > a[href*="document.pdf"]:hover{
+            padding-left: 20px;
+            padding-right: 20px;
+            background-image: url("media/logo-pdf.png"), url("media/logo-list.jpg");
+            background-repeat: no-repeat, no-repeat;
+            background-position: right, left;
+        }
+        li > a[href*="document.zip"]:hover{
+            padding-left: 20px;
+            padding-right: 20px;
+            background-image: url("media/logo-zip.gif"), url("media/logo-list.jpg");
+            background-repeat: no-repeat, no-repeat;
+            background-position: right, left;
+        }
+        p {
+            border: 1px solid darkgrey;
+            padding: 10px;
+            border-radius: 0 25px 0 25px
+        }
+    </style>
+</HEAD>
+<BODY>
+<h2>Форматы файлов.</h2>
+<p>.DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/Doc" target="_blank">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+    <a href="files/document.doc">Документ MS Word</a>
+</p>
+
+
+<p>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/pdf" target="_blank">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
+    <br>
+    <a href="files/document.pdf">Документ PDF</a>
+</p>
+
+<p>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/zip" target="_blank">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
+    <br>
+    <a href="files/document.zip">Архив</a>
+</p>
+<h3>Это список из файлов</h3>
+<ul>
+    <li><a href="files/document.doc">Документ MS Word</a></li>
+    <li><a href="files/document.pdf">Документ PDF</a></li>
+    <li><a href="files/document.zip">Архив</a></li>
+</ul>
+
+</BODY>
+</HTML>
