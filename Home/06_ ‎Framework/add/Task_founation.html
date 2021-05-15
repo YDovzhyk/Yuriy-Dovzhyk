@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
+          type='text/css'>
+    <style>
+        .color {
+            position: relative;
+        }
+
+        IMG.fig {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 2px;
+            right: 30px;
+        }
+
+        .class_style {
+            background-color: #e6e9ec;
+            border: 1px solid grey;
+            border-radius: 6px 6px;
+            height: 40px;
+            width: 800px;
+            display: table-cell;
+            vertical-align: middle;
+            text-indent: 1.5em;
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container grid-container-padded">
+    <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="cell large-12">
+            <div class="color">
+                <h3 align="left">HOW-TO: Программа на Python, Часть 2</h3>
+            </div>
+        </div>
+        <div class="cell large-4">
+            <div class="color">
+                <ul>
+                    <li><em>
+                        <a href="#"> Программа на Python — часть 1</a>
+                    </em></li>
+                    <li><em>
+                        <a href="#"> Программа на Python — часть 2</a>
+                    </em></li>
+                    <li><em>
+                        <a href="#"> Программа на Python — часть 3</a>
+                    </em></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cell large-6">
+            <div class="color">
+                <span>
+                Впрошлом уроке мы рассмотрели простую программу, которая использовала raw_input
+                для получения ответа пользователя, простые типы переменных и простой цикл «<b>for</b>». В
+                этом уроке мы рассмотрим ещё больше типов переменных и напишем ещё больше
+                программ
+                </span>
+            </div>
+        </div>
+        <div class="cell large-2">
+            <div class="color">
+                <img src="media/Icon-Python.png" class="fig" alt="Python" title="Python">
+            </div>
+        </div>
+        <div class="cell large-4">
+            <div class="color">
+                <h4 id="aa3">Содержание</h4>
+                <h6>
+                    HOW-TO: Программа на Python, Часть 2
+                </h6>
+            </div>
+            <ul>
+                <li><u>
+                    <a href="#aa1">Спсики</a>
+                </u></li>
+                <li><u>
+                    <a href="#aa2">Комментарии</a>
+                </u></li>
+            </ul>
+        </div>
+        <div class="cell large-8">
+            <div class="color">
+                <h4 id="aa1">Списки.</h4>
+                <a href="#aa3">К содержанию</a>
+                <p>
+                    Давайте рассмотрим другой тип переменных, который называется <em>списки</em>. В других
+                    языках программирования они называются <em>массивами</em>. Если мы обратимся к аналогии с
+                    коробками для обуви, то массив (список) представляет собой несколько склеенных друг с
+                    другом коробок с одинаковыми вещами. Например, в одной коробке лежат вилки, в
+                    другой — ножи, в третьей — ложки. Посмотрим на простой список— список месяцев. Мы
+                    запрограммируем его так:
+                </p>
+                <div class="class_style">
+                    <code>months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']</code>
+                </div>
+                <br>
+                <p>
+                    Чтобы создать список, мы заключили все значения в квадратные скобки ( <b>'['</b>' и <b>']'</b> ). Мы
+                    назвали наш список <em>'months'</em>. Чтобы использовать список, мы дадим команду print
+                    <b>months[0]</b> или <b>months[1]</b> (которые выведут на экран <em>'Jan'</em> или <em>'Feb'</em>).
+                    Помните: счет
+                    начинается с нуля. Чтобы найти длину списка, можно использовать такую функцию:
+                </p>
+                <div class="class_style">
+                    <code>print len(months)</code>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>

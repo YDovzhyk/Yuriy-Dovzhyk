@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#4F5D73}
+    .fil1 {fill:white}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <rect x="8242.23" y="12592.23" width="4515.54" height="4515.54"/>
+   </clipPath>
+   <clipPath id="id1">
+    <path d="M8242.23 17107.77l4515.53 0 0 -4515.54 -4515.53 0 0 4515.54z"/>
+   </clipPath>
+   <clipPath id="id2">
+    <rect x="8242.23" y="12592.23" width="4515.54" height="4515.54"/>
+   </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g style="clip-path:url(#id0)">
+  </g>
+  <g style="clip-path:url(#id1)">
+   <image id="arrowdown.png" x="8242.22" y="12592.23" width="4515.54" height="4515.54" xlink:href="Right_Images\Right_ImgID1.png"/>
+  </g>
+  <g style="clip-path:url(#id2)">
+  </g>
+  <g id="_1969330127056">
+   <path class="fil0" d="M10270.7 15493.82c-244.56,0 -616.05,22.03 -845.49,-4.1 -319.5,-36.41 -284.19,-276.47 -284.19,-560.34 0,-681.11 86.51,-564.44 1129.68,-564.44 0,-983.14 -11.54,-910.18 932.9,-157.54 265.46,211.55 751.16,500.56 751.16,721.98 0,207.92 -193.45,279.74 -335.1,396.61l-829.7 652.01c-106.99,81.47 -301.84,301.29 -437.76,217.04 -130,-91.85 -81.5,-438.7 -81.5,-701.22zm-1975.55 -361.23l0 -406.42c45.84,-509.73 264.41,-1007.07 655.95,-1398.61 391.54,-391.54 888.89,-610.14 1398.61,-655.95l406.42 0c509.73,45.84 1007.07,264.41 1398.61,655.95 391.54,391.54 610.14,888.89 655.95,1398.61l0 406.42c-45.84,509.73 -264.41,1007.07 -655.95,1398.61 -557.69,557.7 -1012.79,655.95 -1778.21,655.95 -589.57,0 -1119.09,-349.6 -1425.43,-655.95 -391.54,-391.54 -610.14,-888.89 -655.95,-1398.61z"/>
+   <path class="fil1" d="M10270.7 15493.82c0,262.52 -48.5,609.37 81.5,701.22 135.92,84.25 330.77,-135.57 437.76,-217.04l829.7 -652.01c141.65,-116.87 335.1,-188.69 335.1,-396.61 0,-221.42 -485.7,-510.43 -751.16,-721.98 -944.44,-752.64 -932.9,-825.6 -932.9,157.54 -1043.17,0 -1129.68,-116.67 -1129.68,564.44 0,283.87 -35.31,523.93 284.19,560.34 229.44,26.13 600.93,4.1 845.49,4.1z"/>
+  </g>
+ </g>
+</svg>

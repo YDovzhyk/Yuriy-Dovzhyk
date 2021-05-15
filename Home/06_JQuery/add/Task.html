@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Title</title>
+    <style>
+        tr:not([tex-align]) {
+            text-align: left;
+        }
+        tr:nth-child(1) {
+            text-align: center;
+            color: white;
+        }
+        button {
+            height: 30px;
+            width: 200px;
+            border-radius: 6px 6px;
+            border-width: 1px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-2">
+            <div class="item">
+            </div>
+        </div>
+        <div class="col-xl-8">
+            <div class="item">
+                <br>
+            <table>
+                <caption>данные о сотрудниках</caption>
+                <tr>
+                    <th>ФИО</th>
+                    <th>пол</th>
+                    <th>должность</th>
+                    <th>дата рож.</th>
+                    <th>Данные 01</th>
+                    <th>Данные 02</th>
+                </tr>
+                <tr>
+                    <th>Иванов Иван Иванович</th>
+                    <td>М</td>
+                    <td>начальник</td>
+                    <td>01.01.1960</td>
+                    <td>4567</td>
+                    <td>3453</td>
+                </tr>
+                <tr>
+                    <th>Петрова Илонна Петровна</th>
+                    <td>Ж</td>
+                    <td>секретарь</td>
+                    <td>01.01.1989</td>
+                    <td>98795</td>
+                    <td>46523</td>
+                </tr>
+                <tr>
+                    <th>Сидоров Илья Игоревич</th>
+                    <td>М</td>
+                    <td>бухгалтер</td>
+                    <td>01.01.1979</td>
+                    <td>743434</td>
+                    <td>987979</td>
+                </tr>
+                <tr>
+                    <th>Пупин Фёдор Фёдорович</th>
+                    <td>М</td>
+                    <td>водитель</td>
+                    <td>01.01.1963</td>
+                    <td>74323434</td>
+                    <td>9232379</td>
+                </tr>
+                <tr>
+                    <th>Крупин Сергей Иванович</th>
+                    <td>М</td>
+                    <td>водитель 2</td>
+                    <td>01.01.1983</td>
+                    <td>3234534</td>
+                    <td>923123379</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+        <div class="col-xl-2">
+            <div class="item">
+                <br>
+            <button><p>Нет скрытых сторк</p></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function ($) {
+        $('.item').css({'backgroundColor': '', 'height': '190px'});
+        $('table').css('width', '700px');
+        $('caption').css({'caption-side': 'bottom', 'text-align': 'center'});
+        $('tr:has(td)').css({'borderStyle': "dotted", 'borderColor': 'grey', 'borderWidth': '1px', 'height': '20px'});
+        $('td').css({'borderStyle': "dotted", 'borderColor': 'grey', 'borderWidth': '1px'});
+        $('tr:nth-child(2n+1)').css('backgroundColor', '#f0f0f0');
+        $('tr:nth-child(1)').css({'backgroundColor': 'grey', 'borderStyle': "dotted"});
+    });
+
+    $('tr:nth-child(-n+10)').delegate('td', 'click', function () {
+        $(this).closest('tr').hide();
+        $('p').text(function (text) {
+            text = 'Есть скрытые строки';
+            return text;
+        });
+    });
+
+    $('p').on('click', function () {
+        $('tr:nth-child(-n+10)').show();
+        $('p').text(function (text) {
+            text = 'Нет скрытых сторк';
+            return text;
+        });
+    });
+</script>
+
+</body>
+</html>
